@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    esto es una vista de admin :3
+    ACÁ VA HTML(codigo) DEL ADMIN 
 </body>
 </html>

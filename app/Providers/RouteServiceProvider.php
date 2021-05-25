@@ -17,7 +17,8 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const HOME = '//vistaAdmin';
+    public const ADMIN = '/vistaAdmin';
 
     /**
      * The controller namespace for the application.

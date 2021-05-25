@@ -15,7 +15,11 @@
                     @endif
 
                     @if(Auth()->user()->role == 'Administrador')
-                      <a href ="{{route('admin_index')}}" class="btn btn-primary btn-medium btn-block">LLevar a la vista de administrador</a>
+
+                      <a href ="{{route('admin_index')}}" class="btn btn-primary btn-medium btn-block"> LLevar a la vista de administrador</a>
+
+                    @else if(Auth()->user()->role == 'Alumno')
+                    <a href ="{{route('Alumno.index')}}" class="btn btn-primary btn-medium btn-block">Administrar Academicos</a>
                   <!--    <a href ="{{route('students.index')}}" class="btn btn-primary btn-medium btn-block">Administrar Estudiantes</a>
                       <a href ="{{route('types.index')}}" class="btn btn-primary btn-medium btn-block">Administrar Tipo De Actividad De Titulación</a>
                       <a href ="{{route('works.index')}}" class="btn btn-primary btn-medium btn-block">Administrar Actividad De Titulación</a>
